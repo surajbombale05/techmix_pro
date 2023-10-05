@@ -1,0 +1,35 @@
+/* Add this CSS to your stylesheet or component */
+
+/* Style for the container */
+.container {
+    margin-top: 5rem;
+  }
+  
+  /* Style for the reason cards */
+  .reason-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: 300px; /* Adjust the height as needed */
+    cursor: pointer;
+  }
+  
+  /* Style for the reason details */
+  .reason-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.4); /* Add a semi-transparent background */
+    color: white; /* Text color */
+    transition: opacity 0.3s;
+    opacity: 0; /* Initially hidden */
+  }
+  
+  /* Style for the active reason details (on hover) */
+  .reason-card:hover .reason-details {
+    opacity: 1;
+  }
+  
